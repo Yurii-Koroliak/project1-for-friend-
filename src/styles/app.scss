@@ -12,4 +12,7 @@
 img , svg {
 	vertical-align: top;
 	max-width: 100%;
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
 }
