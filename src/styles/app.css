@@ -1,0 +1,51 @@
+.container {
+  max-width: 1536px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 10px;
+}
+@media screen and (max-width: 1536px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  transition: all 0.2s;
+  background: no-repeat;
+  background-size: cover;
+}
+
+img, svg {
+  vertical-align: top;
+  max-width: 100%;
+}/*# sourceMappingURL=app.css.map */

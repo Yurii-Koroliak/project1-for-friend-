@@ -1,0 +1,15 @@
+@import './breakpoints';
+@import './container';
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    background: no-repeat;
+    background-size: cover;
+}
+
+img , svg {
+	vertical-align: top;
+	max-width: 100%;
+}
