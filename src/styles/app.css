@@ -91,6 +91,10 @@ img, svg {
   align-content: center;
 }
 
+.background {
+  background: linear-gradient(#FFC0CB, #000000);
+}
+
 .slide_numm {
   position: absolute;
   top: 20px;
