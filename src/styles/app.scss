@@ -55,10 +55,13 @@ img , svg {
 
     &_numm {
         position: absolute;
+        top: 20px;
+        right: 20px;
 
         &-text {
             font-size: 70px;
-            color: $-c-gray;
+            color: $-c-pink;
+            font-weight: bold;
         }
     }
 
@@ -67,7 +70,8 @@ img , svg {
         bottom: 20px;
 
         &-text {
-            color: $-c-white;
+            font-size: 30px;
+            color: $-c-pink;
         }
     }
 

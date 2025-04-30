@@ -93,17 +93,21 @@ img, svg {
 
 .slide_numm {
   position: absolute;
+  top: 20px;
+  right: 20px;
 }
 .slide_numm-text {
   font-size: 70px;
-  color: #808080;
+  color: #FFC0CB;
+  font-weight: bold;
 }
 .slide_description {
   position: absolute;
   bottom: 20px;
 }
 .slide_description-text {
-  color: #FFFFFF;
+  font-size: 30px;
+  color: #FFC0CB;
 }
 .slide-image {
   width: 600px;
