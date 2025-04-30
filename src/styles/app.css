@@ -64,6 +64,18 @@ img, svg {
     opacity: 1;
   }
 }
+.shadow-drop-center {
+  animation: shadow-drop-center 1s linear both;
+}
+
+@keyframes shadow-drop-center {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.55);
+  }
+}
 .mySlide {
   position: relative;
   display: flex;
@@ -83,7 +95,15 @@ img, svg {
   position: absolute;
 }
 .slide_numm-text {
-  font-size: 50px;
+  font-size: 70px;
+  color: #808080;
+}
+.slide_description {
+  position: absolute;
+  bottom: 20px;
+}
+.slide_description-text {
+  color: #FFFFFF;
 }
 .slide-image {
   width: 600px;

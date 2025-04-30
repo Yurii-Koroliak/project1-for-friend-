@@ -1,5 +1,6 @@
 @import './breakpoints';
 @import './container';
+@import './variables';
 * {
     padding: 0px;
     margin: 0px;
@@ -24,6 +25,15 @@ img , svg {
     to {opacity: 1}
 }
 
+
+
+
+.shadow-drop-center {
+    animation:shadow-drop-center 1s linear both
+} 
+@keyframes shadow-drop-center {
+    0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 20px 0 rgba(255,255,255,.55)}
+}
 .mySlide {
     position: relative;
     display: flex;
@@ -47,12 +57,18 @@ img , svg {
         position: absolute;
 
         &-text {
-            font-size: 50px;
+            font-size: 70px;
+            color: $-c-gray;
         }
     }
 
-    &-description {
+    &_description {
+        position: absolute;
+        bottom: 20px;
 
+        &-text {
+            color: $-c-white;
+        }
     }
 
 
