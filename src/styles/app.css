@@ -52,11 +52,6 @@ img, svg {
      object-fit: cover;
 }
 
-.slide-image {
-  width: 600px;
-  height: 400px;
-}
-
 .fade {
   animation: fadeEffect 2s;
 }
@@ -70,11 +65,29 @@ img, svg {
   }
 }
 .mySlide {
-  position: absolute;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .slideshow-container {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+.slide_numm {
+  position: absolute;
+}
+.slide_numm-text {
+  font-size: 50px;
+}
+.slide-image {
+  width: 600px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=app.css.map */

@@ -27,7 +27,7 @@ function slideShow(){
     //тут мы сказали что если slideIndex становится больше длины масива мы возвращаем его к значению 1
 
 
-    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].style.display = "flex";
     //показываем один слайд из массива (даем ему display block)
     //slideIndex - 1 потому что индексация в масиве начинается с 0 и если у нас slideIndex равняется 1 то надо отнять 1 что бы показать именно первый обэкт в масиве
 
