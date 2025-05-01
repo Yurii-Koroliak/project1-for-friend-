@@ -157,7 +157,7 @@ ul, li {
     background-color: $-c-black;
 
     &_body {
-
+        padding-bottom: 30px;
     }
 
     
@@ -195,12 +195,16 @@ ul, li {
 
             &_description {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
 
                 &-achievements {
-
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
                 }
             }
 

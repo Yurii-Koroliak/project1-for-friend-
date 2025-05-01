@@ -173,6 +173,9 @@ ul, li {
 .footer {
   background-color: #000000;
 }
+.footer_body {
+  padding-bottom: 30px;
+}
 .footer-list {
   display: flex;
   flex-direction: row;
@@ -197,9 +200,16 @@ ul, li {
 }
 .footer-list_element_description {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.footer-list_element_description-achievements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .footer-list_element_image {
   max-height: 300px;
