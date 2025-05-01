@@ -52,6 +52,10 @@ img, svg {
      object-fit: cover;
 }
 
+a {
+  text-decoration: none;
+}
+
 .fade {
   animation: fadeEffect 2s;
 }
@@ -109,6 +113,10 @@ img, svg {
   background: linear-gradient(#FFC0CB, #000000);
 }
 
+ul, li {
+  list-style: none;
+}
+
 .slide_numm {
   position: absolute;
   top: 20px;
@@ -132,4 +140,30 @@ img, svg {
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.header {
+  background-color: #FFC0CB;
+}
+.header_body {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.header_logo-image {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header-nav {
+  width: 450px;
+}
+.header-nav_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=app.css.map */

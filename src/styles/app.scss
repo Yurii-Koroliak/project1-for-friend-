@@ -16,6 +16,10 @@ img , svg {
     object-fit: cover;
 }
 
+a {
+    text-decoration: none;
+}
+
 .fade {
     animation: fadeEffect 2s;
 }
@@ -73,6 +77,10 @@ img , svg {
     background: linear-gradient($-c-pink, $-c-black);
 }
 
+ul, li {
+    list-style: none;
+}
+
 .slide {
 
 
@@ -105,4 +113,45 @@ img , svg {
         height: 400px; 
         object-fit: cover;
     }
+}
+
+
+
+.header {
+    
+    background-color: $-c-pink;
+
+    &_body {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &_logo {
+
+
+        &-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    }
+
+    &-nav {
+        width: 450px;
+
+        &_list {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+.footer {
+    
 }
