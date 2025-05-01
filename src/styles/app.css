@@ -109,8 +109,9 @@ a {
   align-content: center;
 }
 
-.background {
+.main {
   background: linear-gradient(#FFC0CB, #000000);
+  padding-bottom: 30px;
 }
 
 ul, li {
@@ -143,6 +144,7 @@ ul, li {
 }
 
 .header {
+  padding-bottom: 30px;
   background-color: #FFC0CB;
 }
 .header_body {
@@ -166,4 +168,42 @@ ul, li {
   align-items: center;
   align-content: center;
   justify-content: space-between;
+}
+
+.footer {
+  background-color: #000000;
+}
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer-list_element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+}
+.footer-list_element:last-child {
+  padding: 0px;
+}
+.footer-list_element_personal-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-list_element_description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer-list_element_image {
+  max-height: 300px;
+}
+.footer-list_element-text {
+  color: #FFC0CB;
 }/*# sourceMappingURL=app.css.map */

@@ -73,8 +73,9 @@ a {
 }
 
 
-.background {
+.main {
     background: linear-gradient($-c-pink, $-c-black);
+    padding-bottom: 30px;
 }
 
 ul, li {
@@ -118,7 +119,7 @@ ul, li {
 
 
 .header {
-    
+    padding-bottom: 30px;
     background-color: $-c-pink;
 
     &_body {
@@ -153,5 +154,72 @@ ul, li {
 
 
 .footer {
+    background-color: $-c-black;
+
+    &_body {
+
+    }
+
     
+    &_list {
+
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        
+
+        &_element {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            padding-right: 30px;
+            &:last-child {
+                padding: 0px;
+            }
+
+            &_personal-data {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            &_description {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                &-achievements {
+
+                }
+            }
+
+
+            &_contact {
+
+            }
+
+
+            &_image {
+                max-height: 300px;
+            }
+            
+
+            &-text {
+                color: $-c-pink;
+            }
+        }
+    }
+
+
 }
