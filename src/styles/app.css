@@ -73,7 +73,21 @@ img, svg {
     box-shadow: 0 0 0 0 transparent;
   }
   100% {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.55);
+    box-shadow: 0 0 40px 0 rgb(255, 192, 203);
+  }
+}
+.blur-in {
+  animation: blur-in 0.4s linear both;
+}
+
+@keyframes blur-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
   }
 }
 .mySlide {

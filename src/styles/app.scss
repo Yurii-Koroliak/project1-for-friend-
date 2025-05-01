@@ -32,8 +32,27 @@ img , svg {
     animation:shadow-drop-center 1s linear both
 } 
 @keyframes shadow-drop-center {
-    0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 20px 0 rgba(255,255,255,.55)}
+    0% {
+        box-shadow:0 0 0 0 transparent
+    }
+    100% {
+        box-shadow:0 0 40px 0 rgba(255, 192, 203, 1)
+    }
 }
+
+
+
+
+
+.blur-in {
+    animation:blur-in 0.4s linear both
+} 
+@keyframes blur-in {
+    0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}
+}
+
+
+
 .mySlide {
     position: relative;
     display: flex;
@@ -76,6 +95,7 @@ img , svg {
         &-text {
             font-size: 30px;
             color: $-c-pink;
+
         }
     }
 
