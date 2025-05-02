@@ -68,8 +68,9 @@ a {
 
 .slideshow-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
+    align-items: center;
 }
 
 
@@ -113,6 +114,10 @@ ul, li {
         width: 600px;
         height: 400px; 
         object-fit: cover;
+    }
+
+    &-buttons {
+        
     }
 }
 

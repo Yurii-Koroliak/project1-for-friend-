@@ -105,8 +105,9 @@ a {
 
 .slideshow-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
+  align-items: center;
 }
 
 .main {
@@ -142,7 +143,6 @@ ul, li {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .header {
   padding-bottom: 30px;
   background-color: #FFC0CB;
