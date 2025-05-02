@@ -119,6 +119,21 @@ ul, li {
   list-style: none;
 }
 
+.svg-arrows {
+  fill: #000000;
+}
+.svg-arrows:hover {
+  animation: change-color 0.4s linear both;
+}
+@keyframes change-color {
+  0% {
+    fill: #000000;
+  }
+  100% {
+    fill: #FFC0CB;
+  }
+}
+
 .slide_numm {
   position: absolute;
   top: 20px;

@@ -83,6 +83,32 @@ ul, li {
     list-style: none;
 }
 
+
+
+
+
+
+
+
+
+.svg {
+
+    &-arrows {
+        fill: $-c-black;
+        &:hover {
+            animation: change-color 0.4s linear both;
+            @keyframes change-color{
+                0%{
+                    fill: $-c-black;
+                }
+                100%{
+                    fill: $-c-pink;
+                }
+            }
+        }
+    }
+}
+
 .slide {
 
 
