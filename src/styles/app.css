@@ -123,15 +123,7 @@ ul, li {
   fill: #000000;
 }
 .svg-arrows:hover {
-  animation: change-color 0.4s linear both;
-}
-@keyframes change-color {
-  0% {
-    fill: #000000;
-  }
-  100% {
-    fill: #FFC0CB;
-  }
+  fill: #FFC0CB;
 }
 
 .slide_numm {
@@ -216,14 +208,14 @@ ul, li {
 .footer-list_element_description {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .footer-list_element_description-achievements {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   align-content: center;
 }
 .footer-list_element_image {
