@@ -62,3 +62,28 @@ function slideShow(){
     //йоу тут задал что бы слайды менялись каждые 3000 миллисекунд тоесть наш цикл будет запускаться раз в 3к миллисекунд
 }
 
+
+
+function currentSlide(n) {
+  slideIndex = n - 1;
+  showSlideManual(slideIndex);
+}
+
+function showSlideManual(index) {
+  let slides = document.getElementsByClassName("mySlide");
+  let dots = document.getElementsByClassName("slide-dots-item");
+
+  // Скрываем все слайды
+  for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  // Удаляем активный стиль у всех точек
+  for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("active");
+  }
+
+  // Показываем выбранный слайд
+  slides[index].style.display = "flex";
+  dots[index].classList.add("active");
+}
