@@ -23,6 +23,10 @@ function plusSlides(n) {
   slides[slideIndex - 1].style.display = "flex";
 }
 
+
+
+
+
 function slideShow(){
     let slides = document.getElementsByClassName('mySlide');
     //йоу тут создал масив обьектов с классом 'mySlide'
