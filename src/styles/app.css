@@ -150,6 +150,24 @@ ul, li {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.slide-dots {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.slide-dots-item {
+  height: 15px;
+  width: 15px;
+  margin: 0 15px;
+  background-color: #FFC0CB;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slide-dots-item:hover {
+  background-color: #FF69B4;
+}
+
 .header {
   padding-bottom: 30px;
   background-color: #FFC0CB;

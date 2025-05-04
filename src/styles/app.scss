@@ -142,6 +142,26 @@ ul, li {
     &-buttons {
         
     }
+
+    &-dots {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        &-item {
+            height: 15px;
+            width: 15px;
+            margin: 0 15px;
+            background-color: $-c-pink;
+            border-radius: 50%;
+            cursor: pointer;
+            &:hover {
+                background-color: $-c-hotPink;
+            }
+            
+        }
+    }
 }
 
 
