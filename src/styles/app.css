@@ -174,7 +174,7 @@ ul, li {
 }
 .header_body {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
 }
@@ -241,4 +241,8 @@ ul, li {
 }
 .footer-list_element-text {
   color: #FFC0CB;
+}
+
+.bgMusic {
+  cursor: pointer;
 }/*# sourceMappingURL=app.css.map */

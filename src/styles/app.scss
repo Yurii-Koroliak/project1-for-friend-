@@ -172,7 +172,7 @@ ul, li {
 
     &_body {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: row;
         align-items: center;
     }
@@ -274,3 +274,8 @@ ul, li {
 
 
 }
+
+.bgMusic {
+    cursor: pointer;
+}
+
