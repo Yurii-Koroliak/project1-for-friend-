@@ -89,3 +89,13 @@ function showSlideManual(index) {
   slides[index].style.display = "flex";
   dots[index].classList.add("active");
 }
+
+
+
+let backgroundMusic = document.getElementById('bgMusic');
+let volumeSlider = document.getElementById('volumeSlider');
+
+// Устанавливаем громкость при изменении ползунка
+volumeSlider.addEventListener('input', function () {
+  backgroundMusic.volume = this.value;
+});
