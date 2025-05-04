@@ -24,9 +24,6 @@ function plusSlides(n) {
 }
 
 
-function bgMusic (){
-  document.getElementById('bgMusic').play()
-}
 
 
 function slideShow(){
@@ -92,10 +89,40 @@ function showSlideManual(index) {
 
 
 
-let backgroundMusic = document.getElementById('bgMusic');
-let volumeSlider = document.getElementById('volumeSlider');
+const backgroundMusic = document.getElementById('backgroundMusic');
+const volumeSlider = document.getElementById('volumeSlider');
 
 // Устанавливаем громкость при изменении ползунка
 volumeSlider.addEventListener('input', function () {
   backgroundMusic.volume = this.value;
+});
+
+
+
+const slider = document.getElementById('volumeSlider');
+
+function updateSliderBackground(slider) {
+  const percentage = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
+  slider.style.background = `linear-gradient(to right, #FF69B4 0%, #FF69B4 ${percentage}%, #000000 ${percentage}%, #000000 100%)`;
+}
+
+slider.addEventListener('input', () => updateSliderBackground(slider));
+updateSliderBackground(slider); // начальная заливка
+
+
+
+
+const toggleBtn = document.getElementById('toggleMusicBtn');
+
+
+toggleBtn.addEventListener('click', function () {
+
+
+  if (backgroundMusic.paused) {
+      backgroundMusic.play();
+      toggleBtn.querySelector('use').setAttribute('xlink:href', '#pause'); 
+  } else {
+      backgroundMusic.pause();
+      toggleBtn.querySelector('use').setAttribute('xlink:href', '#player');
+  }
 });

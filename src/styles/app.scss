@@ -295,3 +295,34 @@ ul, li {
     color: $-c-hotPink;
 }
 
+
+#volumeSlider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 300px;
+    height: 8px;
+    border-radius: 5px;
+    background: $-c-black;
+    outline: none;
+  }
+
+  /* WebKit: трек — пустой, зальем через JS */
+  #volumeSlider::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 5px;
+    background: transparent;
+  }
+
+  #volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: $-c-hotPink;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -4px; /* выравнивание */
+    border: none;
+    z-index: 2;
+    position: relative;
+  }
