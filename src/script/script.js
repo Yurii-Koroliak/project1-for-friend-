@@ -24,7 +24,9 @@ function plusSlides(n) {
 }
 
 
-
+function bgMusic (){
+  document.getElementById('bgMusic').play()
+}
 
 
 function slideShow(){
