@@ -194,6 +194,13 @@ ul, li {
   align-content: center;
   justify-content: space-between;
 }
+.header_music {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+}
 
 .footer {
   background-color: #000000;
@@ -245,4 +252,12 @@ ul, li {
 
 .bgMusic {
   cursor: pointer;
+  fill: #FF69B4;
+}
+.bgMusic:hover {
+  fill: #000000;
+}
+
+.volume-music {
+  color: #FF69B4;
 }/*# sourceMappingURL=app.css.map */

@@ -198,6 +198,14 @@ ul, li {
             justify-content: space-between;
         }
     }
+
+    &_music {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 80px;
+    }
 }
 
 
@@ -277,5 +285,13 @@ ul, li {
 
 .bgMusic {
     cursor: pointer;
+    fill: $-c-hotPink;
+    &:hover {
+        fill: $-c-black;
+    }
+}
+
+.volume-music {
+    color: $-c-hotPink;
 }
 
